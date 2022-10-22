@@ -1,0 +1,23 @@
+---
+import '../styles/global.less';
+
+import Head from '../components/Head.astro'
+import Nav  from '../components/Nav.astro'
+
+const { title } = Astro.props.content ?? Astro.props;
+---
+<!DOCTYPE html>
+<html>
+<head>
+
+<Head title={title} />
+
+</head>
+<body>
+
+<Nav />
+
+<slot />
+
+</body>
+</html>
